@@ -16,9 +16,11 @@
 		986FC96A22C2F39C007E015E /* RoundedShadowCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC96922C2F39B007E015E /* RoundedShadowCardView.swift */; };
 		986FC96C22C2F7D1007E015E /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC96B22C2F7D1007E015E /* QuoteViewController.swift */; };
 		986FC96E22C3015B007E015E /* ChuckNorrisInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC96D22C3015B007E015E /* ChuckNorrisInfoModel.swift */; };
+		C6397FB2169CF5D9637B61AA /* Pods_Chuck_Norris_Quotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB1E97600051349AC272E2 /* Pods_Chuck_Norris_Quotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CAB1E97600051349AC272E2 /* Pods_Chuck_Norris_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuck_Norris_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		986FC94E22C2EE6B007E015E /* Chuck Norris Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chuck Norris Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986FC95122C2EE6B007E015E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986FC95322C2EE6B007E015E /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		986FC96922C2F39B007E015E /* RoundedShadowCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowCardView.swift; sourceTree = "<group>"; };
 		986FC96B22C2F7D1007E015E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		986FC96D22C3015B007E015E /* ChuckNorrisInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisInfoModel.swift; sourceTree = "<group>"; };
+		B99256ED85F4C7B7930985E2 /* Pods-Chuck Norris Quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris Quotes.release.xcconfig"; path = "Target Support Files/Pods-Chuck Norris Quotes/Pods-Chuck Norris Quotes.release.xcconfig"; sourceTree = "<group>"; };
+		EB06E6C78A1FF7FCF793FDEA /* Pods-Chuck Norris Quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris Quotes.debug.xcconfig"; path = "Target Support Files/Pods-Chuck Norris Quotes/Pods-Chuck Norris Quotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6397FB2169CF5D9637B61AA /* Pods_Chuck_Norris_Quotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9081A6B0EEBDFB33AEF86D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB06E6C78A1FF7FCF793FDEA /* Pods-Chuck Norris Quotes.debug.xcconfig */,
+				B99256ED85F4C7B7930985E2 /* Pods-Chuck Norris Quotes.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7FF587FC0B47B07DDF3718B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB1E97600051349AC272E2 /* Pods_Chuck_Norris_Quotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		986FC94522C2EE6B007E015E = {
 			isa = PBXGroup;
 			children = (
 				986FC95022C2EE6B007E015E /* Chuck Norris Quotes */,
 				986FC94F22C2EE6B007E015E /* Products */,
+				4C9081A6B0EEBDFB33AEF86D /* Pods */,
+				7FF587FC0B47B07DDF3718B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 986FC96022C2EE6C007E015E /* Build configuration list for PBXNativeTarget "Chuck Norris Quotes" */;
 			buildPhases = (
+				D21FDD52DDF2F4E828B468DC /* [CP] Check Pods Manifest.lock */,
 				986FC94A22C2EE6B007E015E /* Sources */,
 				986FC94B22C2EE6B007E015E /* Frameworks */,
 				986FC94C22C2EE6B007E015E /* Resources */,
+				0898F4BB0E57E2DADC6AB77D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +168,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0898F4BB0E57E2DADC6AB77D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris Quotes/Pods-Chuck Norris Quotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris Quotes/Pods-Chuck Norris Quotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21FDD52DDF2F4E828B468DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chuck Norris Quotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		986FC94A22C2EE6B007E015E /* Sources */ = {
@@ -296,15 +370,17 @@
 		};
 		986FC96122C2EE6C007E015E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB06E6C78A1FF7FCF793FDEA /* Pods-Chuck Norris Quotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXHA9K368L;
 				INFOPLIST_FILE = "Chuck Norris Quotes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "parkjohan.johanpark.Chuck-Norris-Quotes";
+				PRODUCT_BUNDLE_IDENTIFIER = "parkjohan.parkjohan.Chuck-Norris-Quotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,15 +389,17 @@
 		};
 		986FC96222C2EE6C007E015E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99256ED85F4C7B7930985E2 /* Pods-Chuck Norris Quotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXHA9K368L;
 				INFOPLIST_FILE = "Chuck Norris Quotes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "parkjohan.johanpark.Chuck-Norris-Quotes";
+				PRODUCT_BUNDLE_IDENTIFIER = "parkjohan.parkjohan.Chuck-Norris-Quotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

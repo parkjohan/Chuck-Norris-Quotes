@@ -16,7 +16,6 @@ class CategoriesViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Categories"
-        
     }
 }
 

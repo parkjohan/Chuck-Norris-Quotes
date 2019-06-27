@@ -20,7 +20,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GDc-FY-lDF">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UTp-Ec-4tI">
                                     <size key="itemSize" width="375" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -72,7 +72,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GDc-FY-lDF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EbB-LX-vAh"/>
                             <constraint firstItem="GDc-FY-lDF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S4U-Vx-uMo"/>
@@ -110,13 +110,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oh-IW-tvH">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oh-IW-tvH" customClass="TransitionButton" customModule="TransitionButton">
                                         <rect key="frame" x="8" y="377" width="334" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="2GX-yG-Dfz"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                        <state key="normal" title="Next">
+                                        <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                        <state key="normal" title="☞">
                                             <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -124,7 +124,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="bTg-Ko-M7T" firstAttribute="leading" secondItem="RHH-UY-8aE" secondAttribute="leading" constant="8" id="Hjf-cg-QKa"/>
                                     <constraint firstItem="bTg-Ko-M7T" firstAttribute="top" secondItem="RHH-UY-8aE" secondAttribute="top" constant="8" id="O8y-MT-yIM"/>
@@ -137,7 +137,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DSa-Yr-7OD" firstAttribute="bottom" secondItem="RHH-UY-8aE" secondAttribute="bottom" constant="189" id="0ZM-Ma-Ade"/>
                             <constraint firstItem="RHH-UY-8aE" firstAttribute="top" secondItem="DSa-Yr-7OD" secondAttribute="top" constant="179" id="eGD-re-NeF"/>
