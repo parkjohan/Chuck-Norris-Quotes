@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980597BD22C5F94600D94B2A /* GenerateRandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */; };
 		986FC95222C2EE6B007E015E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC95122C2EE6B007E015E /* AppDelegate.swift */; };
 		986FC95422C2EE6B007E015E /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC95322C2EE6B007E015E /* CategoriesViewController.swift */; };
 		986FC95722C2EE6B007E015E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986FC95522C2EE6B007E015E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		3CAB1E97600051349AC272E2 /* Pods_Chuck_Norris_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuck_Norris_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateRandomColor.swift; sourceTree = "<group>"; };
 		986FC94E22C2EE6B007E015E /* Chuck Norris Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chuck Norris Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986FC95122C2EE6B007E015E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986FC95322C2EE6B007E015E /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 				EB06E6C78A1FF7FCF793FDEA /* Pods-Chuck Norris Quotes.debug.xcconfig */,
 				B99256ED85F4C7B7930985E2 /* Pods-Chuck Norris Quotes.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,6 +94,7 @@
 				986FC96722C2F2C3007E015E /* CategoriesCollectionViewCell.swift */,
 				986FC96D22C3015B007E015E /* ChuckNorrisInfoModel.swift */,
 				986FC96922C2F39B007E015E /* RoundedShadowCardView.swift */,
+				980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */,
 				986FC95522C2EE6B007E015E /* Main.storyboard */,
 				986FC95822C2EE6C007E015E /* Assets.xcassets */,
 				986FC95A22C2EE6C007E015E /* LaunchScreen.storyboard */,
@@ -224,6 +226,7 @@
 				986FC96A22C2F39C007E015E /* RoundedShadowCardView.swift in Sources */,
 				986FC95422C2EE6B007E015E /* CategoriesViewController.swift in Sources */,
 				986FC96C22C2F7D1007E015E /* QuoteViewController.swift in Sources */,
+				980597BD22C5F94600D94B2A /* GenerateRandomColor.swift in Sources */,
 				986FC96822C2F2C3007E015E /* CategoriesCollectionViewCell.swift in Sources */,
 				986FC95222C2EE6B007E015E /* AppDelegate.swift in Sources */,
 				986FC96E22C3015B007E015E /* ChuckNorrisInfoModel.swift in Sources */,

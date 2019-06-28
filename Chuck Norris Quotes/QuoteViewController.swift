@@ -15,11 +15,12 @@ class QuoteViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     
     var categoryName: String?
+    var colorGenerate = GenerateRandomColor()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        view.backgroundColor = generateRandomColor()
+        view.backgroundColor = colorGenerate.generateRandomColor()
     }
     
     override func viewDidLoad() {
@@ -41,10 +42,14 @@ class QuoteViewController: UIViewController {
         backgroundQueue.async(execute: {
             self.getQuote()
             DispatchQueue.main.async(execute: { () -> Void in
-                sender.stopAnimation(animationStyle: .normal, revertAfterDelay: 0, completion: nil)
-                self.view.backgroundColor = self.generateRandomColor()
+                sender.stopAnimation(animationStyle: .normal, revertAfterDelay: 0.5, completion: nil)
+                self.view.backgroundColor = self.colorGenerate.generateRandomColor()
             })
         })
+    }
+    
+    @IBAction func backPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
     
     func getQuote() {
@@ -63,13 +68,5 @@ class QuoteViewController: UIViewController {
                 }
             }.resume()
         }
-    }
-    
-    func generateRandomColor() -> UIColor {
-        let hue : CGFloat = CGFloat(arc4random() % 256) / 256 // use 256 to get full range from 0.0 to 1.0
-        let saturation : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from white
-        let brightness : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from black
-        
-        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
     }
 }

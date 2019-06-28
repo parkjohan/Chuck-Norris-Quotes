@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GDc-FY-lDF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UTp-Ec-4tI">
                                     <size key="itemSize" width="375" height="100"/>
@@ -72,7 +72,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GDc-FY-lDF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EbB-LX-vAh"/>
                             <constraint firstItem="GDc-FY-lDF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S4U-Vx-uMo"/>
@@ -102,37 +102,59 @@
                                 <rect key="frame" x="32" y="223" width="350" height="450"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTg-Ko-M7T">
-                                        <rect key="frame" x="8" y="8" width="334" height="345"/>
+                                        <rect key="frame" x="8" y="8" width="334" height="361"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="345" id="luP-1l-VEH"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="345" id="luP-1l-VEH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oh-IW-tvH" customClass="TransitionButton" customModule="TransitionButton">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qh5-nZ-vMN">
                                         <rect key="frame" x="8" y="377" width="334" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mp-2N-QwV" customClass="TransitionButton" customModule="TransitionButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="qVo-LX-gmD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                                <state key="normal" title="↩︎">
+                                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backPressed:" destination="DT4-W1-OC4" eventType="touchUpInside" id="J2v-0S-ikF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oh-IW-tvH" customClass="TransitionButton" customModule="TransitionButton">
+                                                <rect key="frame" x="169" y="0.0" width="165" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="2GX-yG-Dfz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                                <state key="normal" title="☛">
+                                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextPressed:" destination="DT4-W1-OC4" eventType="touchUpInside" id="vzG-rr-XlI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="2GX-yG-Dfz"/>
+                                            <constraint firstAttribute="height" constant="65" id="opp-9e-6gn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                        <state key="normal" title="☞">
-                                            <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nextPressed:" destination="DT4-W1-OC4" eventType="touchUpInside" id="vzG-rr-XlI"/>
-                                        </connections>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="bTg-Ko-M7T" firstAttribute="leading" secondItem="RHH-UY-8aE" secondAttribute="leading" constant="8" id="Hjf-cg-QKa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qh5-nZ-vMN" secondAttribute="bottom" constant="8" id="NZE-WN-Zn9"/>
                                     <constraint firstItem="bTg-Ko-M7T" firstAttribute="top" secondItem="RHH-UY-8aE" secondAttribute="top" constant="8" id="O8y-MT-yIM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qh5-nZ-vMN" secondAttribute="trailing" constant="8" id="OUV-eo-2SR"/>
                                     <constraint firstAttribute="trailing" secondItem="bTg-Ko-M7T" secondAttribute="trailing" constant="8" id="WUl-zd-oGZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="0Oh-IW-tvH" secondAttribute="bottom" constant="8" id="YSx-Vr-JxG"/>
-                                    <constraint firstAttribute="height" constant="450" id="fJS-WC-C71"/>
-                                    <constraint firstItem="0Oh-IW-tvH" firstAttribute="leading" secondItem="RHH-UY-8aE" secondAttribute="leading" constant="8" id="hn0-K2-1Gs"/>
-                                    <constraint firstAttribute="trailing" secondItem="0Oh-IW-tvH" secondAttribute="trailing" constant="8" id="kvQ-aO-Q4K"/>
+                                    <constraint firstItem="Qh5-nZ-vMN" firstAttribute="leading" secondItem="RHH-UY-8aE" secondAttribute="leading" constant="8" id="ZUC-Eu-bBX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="450" id="fJS-WC-C71"/>
+                                    <constraint firstItem="Qh5-nZ-vMN" firstAttribute="top" secondItem="bTg-Ko-M7T" secondAttribute="bottom" constant="8" id="oBw-9Z-Lym"/>
                                     <constraint firstItem="bTg-Ko-M7T" firstAttribute="centerX" secondItem="RHH-UY-8aE" secondAttribute="centerX" id="xAC-2B-AdO"/>
                                 </constraints>
                             </view>
@@ -157,10 +179,10 @@
         <!--Navigation Controller-->
         <scene sceneID="DkA-gh-as3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0EW-rF-qV3" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncW-ht-gzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0EW-rF-qV3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eNw-Qw-MG2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -168,7 +190,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5ab-FG-R2O"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ncW-ht-gzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
