@@ -9,7 +9,7 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
-    
+
     var categories = ["Animal","Career","Celebrity","Dev","Explicit","Fashion","Food","History","Money","Movie","Music","Political","Religion","Science","Sport","Travel"]
     
     override func viewDidLoad() {
@@ -26,6 +26,7 @@ extension CategoriesViewController: UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Category Cell", for: indexPath) as! CategoriesCollectionViewCell
+        cell.layer.cornerRadius = 10
         cell.categoryLabel.text = categories[indexPath.item]
         return cell
     }
@@ -50,7 +51,6 @@ extension CategoriesViewController: UICollectionViewDataSource, UICollectionView
         }.resume()
     
         navigationController?.pushViewController(destVC, animated: true)
-        
     }
 }
 

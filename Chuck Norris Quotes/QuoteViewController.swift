@@ -30,7 +30,8 @@ class QuoteViewController: UIViewController {
     }
     
     @objc func shareTapped() {
-        let activity = UIActivityViewController(activityItems: [], applicationActivities: [])
+        let quoteToShare = "Chuck Norris quotes"
+        let activity = UIActivityViewController(activityItems: [quoteToShare], applicationActivities: [])
         activity.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(activity, animated: true)
     }
