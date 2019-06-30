@@ -15,6 +15,7 @@ class QuoteViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     
     var categoryName: String?
+    
     var colorGenerate = GenerateRandomColor()
     
     override func viewWillAppear(_ animated: Bool) {

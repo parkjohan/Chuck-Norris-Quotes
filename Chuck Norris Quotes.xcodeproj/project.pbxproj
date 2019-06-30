@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		980597BD22C5F94600D94B2A /* GenerateRandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */; };
+		980597BE22C7562600D94B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986FC95822C2EE6C007E015E /* Assets.xcassets */; };
 		986FC95222C2EE6B007E015E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC95122C2EE6B007E015E /* AppDelegate.swift */; };
 		986FC95422C2EE6B007E015E /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC95322C2EE6B007E015E /* CategoriesViewController.swift */; };
 		986FC95722C2EE6B007E015E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986FC95522C2EE6B007E015E /* Main.storyboard */; };
-		986FC95922C2EE6C007E015E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986FC95822C2EE6C007E015E /* Assets.xcassets */; };
 		986FC95C22C2EE6C007E015E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986FC95A22C2EE6C007E015E /* LaunchScreen.storyboard */; };
 		986FC96822C2F2C3007E015E /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC96722C2F2C3007E015E /* CategoriesCollectionViewCell.swift */; };
 		986FC96A22C2F39C007E015E /* RoundedShadowCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FC96922C2F39B007E015E /* RoundedShadowCardView.swift */; };
@@ -164,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986FC95C22C2EE6C007E015E /* LaunchScreen.storyboard in Resources */,
-				986FC95922C2EE6C007E015E /* Assets.xcassets in Resources */,
+				980597BE22C7562600D94B2A /* Assets.xcassets in Resources */,
 				986FC95722C2EE6B007E015E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "parkjohan.parkjohan.Chuck-Norris-Quotes";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chuck-Norris-Quotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "parkjohan.parkjohan.Chuck-Norris-Quotes";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chuck-Norris-Quotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
