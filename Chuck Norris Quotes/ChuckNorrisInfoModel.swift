@@ -9,6 +9,7 @@
 import Foundation
 
 struct ChuckNorrisInfoModel: Codable {
+    
     let quote: String
     
     private enum CodingKeys: String, CodingKey {

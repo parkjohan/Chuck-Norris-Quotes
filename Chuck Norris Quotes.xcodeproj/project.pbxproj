@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		3CAB1E97600051349AC272E2 /* Pods_Chuck_Norris_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuck_Norris_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateRandomColor.swift; sourceTree = "<group>"; };
+		980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenerateRandomColor.swift; path = ../GenerateRandomColor.swift; sourceTree = "<group>"; };
 		986FC94E22C2EE6B007E015E /* Chuck Norris Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chuck Norris Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986FC95122C2EE6B007E015E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986FC95322C2EE6B007E015E /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		986FC96722C2F2C3007E015E /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		986FC96922C2F39B007E015E /* RoundedShadowCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowCardView.swift; sourceTree = "<group>"; };
 		986FC96B22C2F7D1007E015E /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
-		986FC96D22C3015B007E015E /* ChuckNorrisInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisInfoModel.swift; sourceTree = "<group>"; };
+		986FC96D22C3015B007E015E /* ChuckNorrisInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChuckNorrisInfoModel.swift; path = ../ChuckNorrisInfoModel.swift; sourceTree = "<group>"; };
 		B99256ED85F4C7B7930985E2 /* Pods-Chuck Norris Quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris Quotes.release.xcconfig"; path = "Target Support Files/Pods-Chuck Norris Quotes/Pods-Chuck Norris Quotes.release.xcconfig"; sourceTree = "<group>"; };
 		EB06E6C78A1FF7FCF793FDEA /* Pods-Chuck Norris Quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris Quotes.debug.xcconfig"; path = "Target Support Files/Pods-Chuck Norris Quotes/Pods-Chuck Norris Quotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,17 +90,33 @@
 			children = (
 				986FC95122C2EE6B007E015E /* AppDelegate.swift */,
 				986FC95322C2EE6B007E015E /* CategoriesViewController.swift */,
-				986FC96B22C2F7D1007E015E /* QuoteViewController.swift */,
 				986FC96722C2F2C3007E015E /* CategoriesCollectionViewCell.swift */,
-				986FC96D22C3015B007E015E /* ChuckNorrisInfoModel.swift */,
-				986FC96922C2F39B007E015E /* RoundedShadowCardView.swift */,
-				980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */,
+				986FC96B22C2F7D1007E015E /* QuoteViewController.swift */,
+				988D1E6522D94D7B00128D44 /* Models */,
+				988D1E6122D9391600128D44 /* Supporting Files */,
 				986FC95522C2EE6B007E015E /* Main.storyboard */,
 				986FC95822C2EE6C007E015E /* Assets.xcassets */,
 				986FC95A22C2EE6C007E015E /* LaunchScreen.storyboard */,
 				986FC95D22C2EE6C007E015E /* Info.plist */,
 			);
 			path = "Chuck Norris Quotes";
+			sourceTree = "<group>";
+		};
+		988D1E6122D9391600128D44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				986FC96922C2F39B007E015E /* RoundedShadowCardView.swift */,
+				980597BC22C5F94600D94B2A /* GenerateRandomColor.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		988D1E6522D94D7B00128D44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				986FC96D22C3015B007E015E /* ChuckNorrisInfoModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

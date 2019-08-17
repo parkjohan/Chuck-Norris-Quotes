@@ -21,20 +21,14 @@ class QuoteViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        getQuote()
         view.backgroundColor = colorGenerate.generateRandomColor()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
-    }
-    
-    @objc func shareTapped() {
-        let quoteToShare = "Chuck Norris quotes"
-        let activity = UIActivityViewController(activityItems: [quoteToShare], applicationActivities: [])
-        activity.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
-        present(activity, animated: true)
+        //getQuote()
     }
     
     @IBAction func nextPressed(_ sender: TransitionButton) {
@@ -42,10 +36,10 @@ class QuoteViewController: UIViewController {
         let qualityOfServiceClass = DispatchQoS.QoSClass.background
         let backgroundQueue = DispatchQueue.global(qos: qualityOfServiceClass)
         backgroundQueue.async(execute: {
-            self.getQuote()
-            DispatchQueue.main.async(execute: { () -> Void in
-                sender.stopAnimation(animationStyle: .normal, revertAfterDelay: 0.5, completion: nil)
-                self.view.backgroundColor = self.colorGenerate.generateRandomColor()
+            DispatchQueue.main.async(execute: { [weak self] () -> Void in
+                sender.stopAnimation(animationStyle: .normal, revertAfterDelay: 0.3, completion: nil)
+                self?.view.backgroundColor = self?.colorGenerate.generateRandomColor()
+                self?.getQuote()
             })
         })
     }
@@ -59,12 +53,12 @@ class QuoteViewController: UIViewController {
             let urlString = "https://api.chucknorris.io/jokes/random?category=\(category)"
             guard let url = URL(string: urlString) else { return }
             
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
+            URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
                 if let data = data, error == nil {
                     if let quoteData = try? JSONDecoder().decode(ChuckNorrisInfoModel.self, from: data) {
                         
                         DispatchQueue.main.async {
-                            self.quoteLabel.text = quoteData.quote
+                            self?.quoteLabel.text = quoteData.quote
                         }
                     }
                 }
